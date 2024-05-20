@@ -105,7 +105,7 @@ func main() {
 	}
 
 	// This assumes that yt-dlp is in your PATH
-	cmd := exec.Command("yt-dlp.exe", url, "-s", "--flat-playlist", "--dump-single-json")
+	cmd := exec.Command("yt-dlp", url, "-s", "--flat-playlist", "--dump-single-json")
 
 	var playlist YTPlaylist
 	output, err := cmd.Output()
