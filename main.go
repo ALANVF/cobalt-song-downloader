@@ -28,7 +28,7 @@ func getSong(client *http.Client, url string) *CobaltResponse {
 
 	req, err := http.NewRequest(
 		"POST",
-		"https://co.wuk.sh/api/json",
+		"https://api.cobalt.tools/api/json",
 		bytes.NewBuffer(requestString),
 	)
 	if err != nil {
